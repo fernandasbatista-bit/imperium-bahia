@@ -30,4 +30,4 @@ http.createServer(async(req,res)=>{try{
  const pathname=decodeURIComponent(url.pathname);const rel=pathname==='/'?'index.html':pathname.slice(1);const file=path.resolve(root,rel);
  if(!file.startsWith(root+path.sep)||!types[path.extname(file)]||!(/^(index\.html|assets\/|css\/|js\/)/.test(rel)))return json(res,404,{error:'Não encontrado'});
  const data=await fs.readFile(file);res.writeHead(200,{'Content-Type':types[path.extname(file)],'X-Content-Type-Options':'nosniff'});res.end(req.method==='HEAD'?undefined:data);
- }catch(e){if(!res.headersSent)json(res,e.code==='ENOENT'?404:500,{error:'Não foi possível concluir. Use o modo local.'});else res.end();}}).listen(port,'127.0.0.1',()=>console.log(`IMPÉRIUM BAHIA: http://localhost:${port} | IA opcional: ${model||'desativada'}`));
+ }catch(e){if(!res.headersSent)json(res,e.code==='ENOENT'?404:500,{error:'Não foi possível concluir. Use o modo local.'});else res.end();}}).listen(port,process.env.HOST || '127.0.0.1',()=>console.log(`IMPÉRIUM BAHIA: http://localhost:${port} | IA opcional: ${model||'desativada'}`));
