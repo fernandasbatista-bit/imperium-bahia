@@ -1,0 +1,19 @@
+digraph DER {
+ graph [rankdir=TB, bgcolor="white", pad=.18, nodesep=.35, ranksep=.52, splines=polyline];
+ node [shape=box, style="rounded,filled", fillcolor="#E9F1F9", color="#204B77", fontname="DejaVu Sans", fontsize=13, margin=".15,.09"];
+ edge [color="#55718C", fontname="DejaVu Sans", fontsize=10, arrowhead=none];
+ cliente [label="CLIENTE"]; categoria [label="CATEGORIA"]; marca [label="MARCA"]; produto [label="PRODUTO"]; variante [label="VARIANTE"]; pedido [label="PEDIDO"]; item [label="ITEM_PEDIDO"]; chat [label="INTERAÇÃO_CHATBOT"]; rec [label="RECOMENDAÇÃO"]; aval [label="AVALIAÇÃO"];
+ {rank=same; cliente; categoria; marca;}
+ {rank=same; pedido; chat; produto;}
+ {rank=same; aval; rec; variante;}
+ cliente -> pedido [label="1 : 0..N"];
+ cliente -> chat [label="0..1 : 0..N"];
+ categoria -> produto [label="1 : 0..N"];
+ marca -> produto [label="1 : 0..N"];
+ produto -> variante [label="1 : 0..N"];
+ pedido -> item [label="1 : 1..N"];
+ variante -> item [label="1 : 0..N"];
+ pedido -> aval [label="1 : 0..1"];
+ chat -> rec [label="1 : 0..N"];
+ produto -> rec [label="1 : 0..N"];
+}

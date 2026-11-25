@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#103a8c">
+<title>IMPÉRIUM BAHIA | Vista sua performance</title>
+<link rel="stylesheet" href="css/style.css">
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script><script defer src="js/bytemind.js"></script><script defer src="js/app.js"></script>
+</head>
+<body>
+<div id="entryGate" class="entry-gate" role="region" aria-label="Boas-vindas à IMPÉRIUM BAHIA">
+ <section class="bahia-intro entry-intro" id="quem-somos" aria-labelledby="bahiaIntroTitle">
+  <div class="bahia-intro-top"><span>IMPÉRIUM BAHIA</span><span>MODA • MOVIMENTO • IDENTIDADE</span></div>
+  <div class="bahia-intro-layout">
+   <div class="bahia-story">
+    <span class="bahia-intro-kicker">NOSSA HISTÓRIA E ESSÊNCIA</span>
+    <h2 id="bahiaIntroTitle">A energia da Bahia.<br><em>O estilo que acompanha você.</em></h2>
+    <p>A IMPÉRIUM BAHIA nasceu como projeto de uma loja que valoriza a personalidade, as cores e a criatividade baiana. Queremos reunir roupas, tênis e acessórios esportivos que façam sentido para a sua rotina.</p>
+    <p>Nosso objetivo é tornar a escolha mais simples: informações claras, variedade de marcas, atendimento próximo e a busca por entregas rápidas, sem aquela dor de cabeça que ninguém merece.</p>
+   </div>
+   <div class="bahia-intro-center">
+    <div class="bahia-crown" aria-hidden="true">♛</div>
+    <strong class="bahia-signature">IMPÉRIUM<br>BAHIA</strong>
+    <p class="entry-instruction">ESCOLHA UMA OPÇÃO PARA ENTRAR NA LOJA</p>
+    <button type="button" class="bahia-explore" data-entry="colecoes" aria-label="Entrar nas coleções por estação">
+     <span>Explore nossas</span><b>marcas e<br>coleções</b><small>CLIQUE AQUI <span aria-hidden="true">↗</span></small>
+    </button>
+    <div class="entry-shortcuts" aria-label="Entrar no catálogo por categoria">
+      <button type="button" data-entry="Vestuário">ROUPAS</button>
+      <button type="button" data-entry="Calçados">TÊNIS</button>
+      <button type="button" data-entry="Acessórios">ACESSÓRIOS</button>
+    </div>
+    <button type="button" class="entry-all" data-entry="Todos">VER TODO O CATÁLOGO <span aria-hidden="true">↗</span></button>
+   </div>
+   <div class="bahia-promise">
+    <span class="bahia-intro-kicker">O QUE PROPORCIONAMOS</span>
+    <h2>Mais praticidade.<br><em>Menos complicação.</em></h2>
+    <p><strong>Estilo e variedade:</strong> marcas esportivas, roupas e acessórios reunidos em um só lugar.</p>
+    <p><strong>Escolhas mais claras:</strong> informações de tamanhos, preços e imagens identificadas para você comprar com mais segurança.</p>
+    <p><strong>Atendimento e agilidade:</strong> nosso compromisso é facilitar a jornada de compra e buscar entregas rápidas e confiáveis.</p>
+   </div>
+  </div>
+  <div class="bahia-intro-foot"><span>ESSÊNCIA BAIANA</span><span>ESTILO PARA TODAS AS ESTAÇÕES</span><span>UMA EXPERIÊNCIA SEM COMPLICAÇÃO</span></div>
+ </section>
+</div>
+
+<div id="siteShell" hidden>
+
+<div class="announcement"><span>⚡ SUA PERFORMANCE, SEU ESTILO</span><span>1ª compra com FRETE GRÁTIS • demais compras: grátis acima de R$ 250</span><span class="ai-top">✦ Assistente inteligente online</span></div>
+<header class="header">
+ <a class="brand" href="#"><span class="brand-mark">I<span>✦</span></span><span>IMPÉRIUM BAHIA<small>SPORT & STYLE</small></span></a>
+ <button type="button" class="entry-return" id="backToEntry" aria-label="Voltar para a apresentação da loja">← Início</button>
+ <form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="O que você procura hoje?" aria-label="Buscar produtos"><button aria-label="Buscar">⌕</button></form>
+ <div class="header-actions"><button id="accountBtn" class="account-btn">♙ <span id="accountLabel">Entrar / Cadastrar</span></button><button id="cartBtn" class="cart-btn">🛒 <span>Carrinho</span><b id="cartCount">0</b></button></div>
+</header>
+<nav class="nav" id="mainNav">
+ <button data-category="Todos" class="active">Novidades</button><button data-category="Calçados">Calçados</button><button data-category="Vestuário">Roupas</button><button data-category="Luta">Artes marciais & luta</button><button data-category="Tecnologia">Wearables</button><button data-category="Acessórios">Acessórios</button><button data-category="Promoções">Ofertas</button>
+</nav>
+<main>
+ <section class="hero">
+  <div class="hero-copy"><span class="eyebrow">IMPÉRIUM BAHIA • COLEÇÃO 2026</span><h1>O seu limite é<br><em>o próximo nível.</em></h1><p>Do corre diário ao tatame. Encontre equipamentos, roupas e tecnologia para fazer cada treino valer.</p><div class="hero-buttons"><a href="#catalogo" class="btn btn-red">COMPRAR AGORA <span>→</span></a><button id="heroAssistant" class="btn btn-outline">✦ ME AJUDE A ESCOLHER</button></div><div class="hero-proof">✓ Produtos selecionados　 ✓ Compra simples　 ✓ Suporte inteligente</div></div>
+  <div class="hero-art hero-visual-updated" aria-label="Destaque principal da loja">
+  <div class="hero-backdrop-shape hero-shape-a"></div>
+  <div class="hero-backdrop-shape hero-shape-b"></div>
+  <div class="hero-backdrop-shape hero-shape-c"></div>
+
+  <div class="hero-card hero-card-main">
+    <div class="hero-sneaker-illustration"><img src="assets/images/tenis-retro-banner.webp" width="545" height="285" alt="Ilustração de tênis retrô em amarelo, turquesa e coral"><span>IMAGEM ILUSTRATIVA • NÃO É FOTO OFICIAL</span></div>
+  </div>
+
+  <div class="hero-card hero-card-shirt">
+    <img src="assets/images/camiseta-compressao-enviada.png" alt="Camiseta térmica dry-fit em destaque">
+  </div>
+
+  <div class="hero-card hero-card-bag">
+    <img src="assets/images/ilustracoes/22.svg" alt="Mochila esportiva em destaque">
+  </div>
+
+  <div class="hero-badge">LANÇAMENTOS<br>EM ALTA</div>
+  <div class="hero-caption">PEÇAS EM DESTAQUE • TREINO • ESTILO • PERFORMANCE</div>
+</div>
+ </section>
+ <section class="perks"><div>🚚 <span><b>Frete grátis na 1ª compra</b><small>Depois, grátis a partir de R$ 250</small></span></div><div>💳 <span><b>Até 10x sem juros</b><small>Mais liberdade pra escolher</small></span></div><div>↺ <span><b>Troca facilitada</b><small>Consulte nossa política</small></span></div><div>✦ <span><b>Assistente IMPÉRIUM BAHIA</b><small>Ajuda na escolha do produto</small></span></div></section>
+ 
+
+
+
+ <section class="season-collections" id="colecoes" aria-labelledby="seasonTitle">
+  <header class="season-heading">
+   <div><span class="eyebrow dark">ESCOLHA SUA ESTAÇÃO</span><h2 id="seasonTitle">Coleções para <em>cada momento do ano.</em></h2><p>Seleções temáticas da IMPÉRIUM BAHIA com produtos do nosso catálogo. Não são coleções oficiais das fabricantes.</p></div>
+   <a class="season-all-link" href="#catalogo">Ver catálogo completo <span aria-hidden="true">↗</span></a>
+  </header>
+  <div class="season-tabs" id="seasonTabs" role="group" aria-label="Escolha uma estação do ano">
+   <button type="button" class="active" data-season="verao" aria-pressed="true"><span>☀</span> Verão</button>
+   <button type="button" data-season="outono" aria-pressed="false"><span>🍂</span> Outono</button>
+   <button type="button" data-season="inverno" aria-pressed="false"><span>❄</span> Inverno</button>
+   <button type="button" data-season="primavera" aria-pressed="false"><span>✿</span> Primavera</button>
+  </div>
+  <div class="season-filter">
+   <div><strong id="seasonCaption">Verão em movimento</strong><p id="seasonDescription">Peças leves e acessórios para treinar nos dias quentes.</p></div>
+   <label for="seasonBrand">Escolha a marca
+    <select id="seasonBrand" aria-label="Filtrar coleção por marca"><option value="Todas">Todas as marcas</option></select>
+   </label>
+  </div>
+  <div class="season-product-grid" id="seasonProducts" aria-live="polite"></div>
+  <p class="season-disclaimer">Curadoria ilustrativa da IMPÉRIUM BAHIA: disponibilidade, cores e fotos dos modelos devem ser confirmadas antes de uma compra real.</p>
+ </section>
+
+ <section class="brand-discovery" id="marcas" aria-labelledby="brandDiscoveryTitle">
+ <div class="brand-discovery-head"><span class="eyebrow dark">ENCONTRE SUA MARCA</span><h2 id="brandDiscoveryTitle">Escolha sua <em>marca favorita.</em></h2><p>Selecione uma marca para ver somente os produtos relacionados. Os nomes são identificações tipográficas, não logotipos oficiais.</p></div>
+ <div class="brand-scroll" id="brandSelector" aria-label="Filtrar produtos por marca"></div>
+  <div class="lookbook-intro"><div><span class="eyebrow dark">REFERÊNCIAS VISUAIS</span><h3>Inspirações de looks por marca</h3><p>Explore modelos e combinações de roupas no Pinterest. Estas referências não são fotos dos produtos cadastrados no catálogo.</p></div><a href="https://pixabay.com/pt/images/search/loja%20de%20roupas/" target="_blank" rel="noopener noreferrer">Inspiração de vitrines no Pixabay ↗</a></div>
+  <div class="lookbook-grid" id="lookbookGrid" aria-label="Referências de roupas esportivas"></div>
+</section>
+<section class="promo-zone" aria-label="Ofertas especiais">
+  <article class="promo-card promo-daily"><span class="promo-kicker">⚡ OFERTA DO DIA</span><h2>Preço especial pra<br><em>treinar mais.</em></h2><p id="dailyOfferText">Uma seleção de produtos com desconto por tempo limitado.</p><a href="#catalogo" class="promo-link">VER OFERTAS →</a><small id="dailyOfferDate"></small></article>
+  <article class="promo-card promo-first"><span class="promo-kicker">🎁 PRIMEIRA COMPRA</span><h2>Seu primeiro pedido<br>tem <em>vantagem.</em></h2><p>Use o cupom <strong>BEMVINDO10</strong> para 10% OFF na primeira compra. Frete grátis de boas-vindas!</p><button id="copyWelcome" class="promo-link">COPIAR CUPOM →</button><small>Condição demonstrativa do protótipo. Não é desconto aplicado no pagamento.</small></article>
+ </section>
+ <section class="campaign-bar"><div><strong>🔥 OFERTAS DA SEMANA</strong><span>Novas marcas e preços de demonstração para você comparar.</span></div><a href="#catalogo">EXPLORAR PRODUTOS →</a></section>
+<section class="departments-wrap" id="modalidades">
+  <div class="department-heading"><span class="eyebrow dark">EXPLORE POR OBJETIVO</span><h2>Seu esporte. <em>Seu equipamento.</em></h2><p>Seleções recomendadas para cada tipo de treino.</p></div>
+  <div id="departmentSections"></div>
+ </section>
+ <section class="section" id="catalogo">
+  <div class="section-head"><div><span class="eyebrow dark">ESCOLHA SEU EQUIPAMENTO</span><h2>Todos os produtos <em>em um só lugar.</em></h2><p>Pesquise, filtre e compare os itens do catálogo completo.</p></div><select id="sortSelect" aria-label="Ordenar produtos"><option value="relevance">Mais relevantes</option><option value="low">Menor preço</option><option value="high">Maior preço</option><option value="name">Nome A–Z</option></select></div>
+  <div class="filter-row"><div class="category-pills"><button class="selected" data-category="Todos">Todos</button><button data-category="Calçados">Calçados</button><button data-category="Vestuário">Vestuário</button><button data-category="Luta">Luta</button><button data-category="Tecnologia">Wearables</button><button data-category="Acessórios">Acessórios</button><button data-category="Promoções">Ofertas</button></div><span id="resultCount"></span></div>
+  <div id="productGrid" class="product-grid"></div><div id="noResults" class="no-results" hidden>Não encontramos produtos com essa busca. Tente outro termo.</div>
+ </section>
+ <section class="smart-pick"><div class="smart-copy"><span class="eyebrow">✦ IMPÉRIUM BAHIA INTELLIGENCE</span><h2>Seu treino tem<br>uma <em>nova dupla.</em></h2><p>Veja sugestões de itens que combinam com sua rotina. Escolha uma modalidade e descubra possibilidades.</p><button id="recommendBtn" class="btn btn-white">MONTAR MEU KIT →</button></div><div class="smart-cards" id="recommendations"></div><div class="ai-watermark">AI</div></section>
+ <section class="section categories-section"><div class="section-head"><div><span class="eyebrow dark">ENCONTRE SUA MODALIDADE</span><h2>Qual é a sua <em>vibe?</em></h2></div></div><div class="sport-categories"><button class="modality-card modality-luta" data-department="luta" aria-label="Ver produtos de Luta"><span class="modality-symbol"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3 3 6.5 1.8 13l4 1.6L7 10v11h10V10l1.2 4.6 4-1.6L21 6.5 16 3l-4 4Z"/><path d="M16 3 8 14M7 14h10M7 16h10"/></svg></span><span class="modality-info"><b>Luta</b><small>Jiu-jitsu e combate</small></span><span class="modality-arrow" aria-hidden="true">↗</span></button><button class="modality-card modality-corrida" data-department="corrida" aria-label="Ver produtos de Corrida"><span class="modality-symbol"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="15.5" cy="4" r="2"/><path d="m13.5 8-3 5.5 4.5 2 3 5M10.5 13.5 7 18l-4 2M13.5 8l4 3 3-1M13.5 8l-5 1-3 4"/></svg></span><span class="modality-info"><b>Corrida</b><small>Seu próximo ritmo</small></span><span class="modality-arrow" aria-hidden="true">↗</span></button><button class="modality-card modality-musculacao" data-department="musculacao" aria-label="Ver produtos de Musculação"><span class="modality-symbol"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="4" height="10" rx="1"/><rect x="17" y="7" width="4" height="10" rx="1"/><path d="M7 12h10M1 10v4m22-4v4"/></svg></span><span class="modality-info"><b>Musculação</b><small>Força e movimento</small></span><span class="modality-arrow" aria-hidden="true">↗</span></button><button class="modality-card modality-tenis" data-department="tenis" aria-label="Ver produtos de Tênis esportivos"><span class="modality-symbol"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h4c0 3 2 5 4 5l3-2 3 3 3.5 1.2c1.5.5 2 1.5 2 3V19H2v-7Z"/><path d="M2 16.5h20M12 11l1.5 2M15 11l1.5 2"/></svg></span><span class="modality-info"><b>Tênis esportivos</b><small>Conforto em cada passo</small></span><span class="modality-arrow" aria-hidden="true">↗</span></button><button class="modality-card modality-roupas" data-department="roupas" aria-label="Ver produtos de Roupas esportivas"><span class="modality-symbol"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3 2 7l3 5 3-2v11h8V10l3 2 3-5-6-4a4 4 0 0 1-8 0Z"/></svg></span><span class="modality-info"><b>Roupas esportivas</b><small>Estilo em movimento</small></span><span class="modality-arrow" aria-hidden="true">↗</span></button></div></section>
+ <section class="newsletter"><div><span class="eyebrow dark">FIQUE POR DENTRO</span><h2>Novidades que acompanham<br><em>seu movimento.</em></h2></div><form id="newsletterForm"><label for="newsletterEmail">Receba novidades e ofertas</label><div><input type="email" id="newsletterEmail" placeholder="Digite seu e-mail" required><button class="btn btn-red">QUERO RECEBER</button></div><small id="newsletterStatus">Conteúdo especial direto na sua caixa de entrada.</small></form></section>
+</main>
+<section class="physical-store" id="loja-fisica" aria-labelledby="physicalStoreTitle">
+  <div class="physical-store-photo"><img src="assets/images/fachada-imperium-bahia.webp" alt="Imagem ilustrativa da fachada IMPÉRIUM BAHIA" loading="lazy"></div>
+  <div class="physical-store-content">
+    <span class="physical-store-eyebrow">IMPÉRIUM BAHIA • LOJA FÍSICA</span>
+    <h2 id="physicalStoreTitle">Conheça a nossa loja física</h2>
+    <p>Em breve, teremos um espaço para você conhecer a IMPÉRIUM BAHIA de perto.</p>
+    <p class="physical-store-address"><strong>Endereço previsto:</strong> Rua Carlos de Souza Nazaré, São Paulo – SP.</p>
+    <small>Localização informada para o projeto. A abertura e o endereço devem ser confirmados antes da visita.</small>
+  </div>
+</section>
+
+<footer><a class="brand footer-brand" href="#"><span class="brand-mark">I<span>✦</span></span><span>IMPÉRIUM BAHIA<small>SPORT & STYLE</small></span></a><p>Movimento, tecnologia e performance em um só lugar.</p><small>© 2026 IMPÉRIUM BAHIA • Projeto Integrador Piloto • Loja demonstrativa</small><p id="dbStatus" role="status">Conectando ao MySQL…</p></footer>
+</div><!-- siteShell -->
+
+<div id="overlay" class="overlay" hidden></div>
+<aside id="cartDrawer" class="drawer"><div class="drawer-head"><h2>Seu carrinho <span id="drawerCount"></span></h2><button class="icon-close" id="closeCart">×</button></div><div id="cartContent" class="cart-content"></div><div class="drawer-bottom"><div class="shipping-meter"><b id="shippingMessage">🚚 Frete grátis na primeira compra</b><div class="shipping-track"><span id="shippingProgress"></span></div><small id="shippingPolicy">Demais pedidos: grátis a partir de R$ 250,00.</small></div><form id="couponForm" class="coupon-form"><label for="couponInput">Tem um cupom?</label><div><input id="couponInput" placeholder="Ex.: BEMVINDO10" autocomplete="off"><button type="submit">RESGATAR</button></div><small id="couponFeedback" aria-live="polite">Cupons: BEMVINDO10 (1ª compra) ou SPORT5.</small></form><div class="summary-line"><span>Desconto</span><b id="cartDiscount">R$ 0,00</b></div><div class="summary-line"><span>Frete demonstrativo</span><b id="cartShipping">Grátis</b></div><div class="subtotal"><span>Subtotal</span><b id="cartSubtotal">R$ 0,00</b></div><small id="cartTotalLabel">Total estimado com descontos e frete simulado.</small><button id="checkoutBtn" class="btn btn-red wide">CONTINUAR PARA FINALIZAÇÃO →</button><button id="continueShopping" class="text-btn">Continuar comprando</button></div></aside>
+
+<section id="accountModal" class="modal" aria-modal="true" role="dialog" aria-labelledby="accountTitle"><button class="modal-x" data-close="accountModal">×</button><div class="modal-brand">I<span>✦</span></div><span class="eyebrow dark">SUA CONTA IMPÉRIUM BAHIA</span><h2 id="accountTitle">Entre no jogo.</h2><p class="modal-sub">Acesse sua conta ou crie seu cadastro para acompanhar suas compras.</p><div class="tabs"><button class="tab active" data-tab="login">Entrar</button><button class="tab" data-tab="register">Criar conta</button></div>
+ <form id="loginForm" class="account-form"><label>E-mail<input type="email" id="loginEmail" required placeholder="voce@email.com"></label><label>Senha<input type="password" id="loginPassword" required minlength="8" placeholder="Mínimo de 8 caracteres"></label><button class="btn btn-red wide">ENTRAR NA CONTA</button><small id="loginMessage" class="form-message"></small></form>
+ <form id="registerForm" class="account-form" hidden><label>Nome completo<input id="registerName" required minlength="2" placeholder="Como podemos te chamar?"></label><label>E-mail<input type="email" id="registerEmail" required placeholder="voce@email.com"></label><label>Senha<input type="password" id="registerPassword" required minlength="8" placeholder="Crie uma senha com 8+ caracteres"></label><label>Confirmar senha<input type="password" id="confirmPassword" required minlength="8" placeholder="Digite a senha novamente"></label><button class="btn btn-red wide">CRIAR MINHA CONTA</button><small id="registerMessage" class="form-message"></small></form><p class="privacy-note">Demonstração local: os dados ficam salvos somente neste navegador. Não use senhas pessoais.</p></section>
+
+<section id="productModal" class="modal product-modal" aria-modal="true" role="dialog"><button class="modal-x" data-close="productModal">×</button><div id="productDetail"></div></section>
+
+<section id="reviewModal" class="modal review-modal" aria-modal="true" role="dialog" aria-labelledby="reviewTitle">
+ <button class="modal-x" data-close="reviewModal" aria-label="Fechar avaliação">×</button>
+ <span class="review-eyebrow">SUA OPINIÃO IMPORTA</span>
+ <h2 id="reviewTitle">Como foi sua experiência?</h2>
+ <p class="modal-sub">Pedido demonstrativo concluído! Conta pra gente como foi usar o site. Isso ajuda a melhorar a IMPÉRIUM BAHIA.</p>
+ <form id="reviewForm" class="review-form">
+  <fieldset class="review-fieldset">
+   <legend>Como você avalia sua experiência na loja?</legend>
+   <div class="review-stars" role="radiogroup" aria-label="Nota de 1 a 5 estrelas">
+    <label><input type="radio" name="siteRating" value="1" required><span aria-hidden="true">★</span><span class="sr-only">1 estrela</span></label>
+    <label><input type="radio" name="siteRating" value="2"><span aria-hidden="true">★</span><span class="sr-only">2 estrelas</span></label>
+    <label><input type="radio" name="siteRating" value="3"><span aria-hidden="true">★</span><span class="sr-only">3 estrelas</span></label>
+    <label><input type="radio" name="siteRating" value="4"><span aria-hidden="true">★</span><span class="sr-only">4 estrelas</span></label>
+    <label><input type="radio" name="siteRating" value="5"><span aria-hidden="true">★</span><span class="sr-only">5 estrelas</span></label>
+   </div>
+  </fieldset>
+  <label for="reviewNotes" class="review-label">Observações e sugestões <small>(opcional)</small></label>
+  <textarea id="reviewNotes" rows="4" maxlength="1000" placeholder="O que podemos melhorar? Fale sobre navegação, informações, fotos ou atendimento..."></textarea>
+  <div class="review-actions"><button type="submit" class="btn btn-red">ENVIAR AVALIAÇÃO</button><button type="button" id="skipReview" class="review-skip">Agora não</button></div>
+  <p class="review-privacy">Avaliação demonstrativa: será registrada no banco MySQL local. Não informe dados pessoais nas observações.</p>
+ </form>
+</section>
+<section id="checkoutModal" class="modal checkout-modal" aria-modal="true" role="dialog"><button class="modal-x" data-close="checkoutModal">×</button><span class="eyebrow dark">QUASE LÁ!</span><h2>Finalizar pedido</h2><p class="modal-sub">Confira os dados para simular a finalização da compra.</p><form id="checkoutForm" class="account-form"><label>Nome completo<input id="checkoutName" readonly required></label><label>E-mail<input id="checkoutEmail" type="email" readonly required></label><p class="modal-sub">Pedido acadêmico: não informe endereço nem dados de pagamento. Nenhuma entrega será realizada.</p><div id="checkoutSummary" class="checkout-summary"></div><button class="btn btn-red wide">CONFIRMAR PEDIDO DEMONSTRATIVO</button></form></section>
+
+<button id="chatLauncher" class="chat-launcher"><span aria-hidden="true">✦</span> ByteMind • Assistente da loja <i></i></button>
+<section id="chatWindow" class="chat-window" aria-label="Assistente ByteMind"><header><span class="chat-avatar">B</span><div><b>ByteMind | IMPÉRIUM BAHIA</b><small>Consultor virtual • catálogo conectado</small></div><button id="clearChat" title="Limpar conversa" aria-label="Limpar conversa">↺</button><button id="closeChat" aria-label="Fechar assistente">×</button></header><div class="chat-intro"><strong>Encontre o que combina com sua rotina.</strong><br>Compare marcas, preços e produtos; consulte o carrinho, cupons e frete.</div><div id="chatMessages" class="chat-messages" role="log" aria-live="polite"><div class="bubble bot">Olá! Sou o ByteMind. Me conte o que você procura, qual marca prefere ou quanto pretende gastar.</div></div><div class="quick-prompts"><button data-prompt="Camisetas até R$ 100">Até R$ 100</button><button data-prompt="Compare Nike e Olympikus">Comparar marcas</button><button data-prompt="Como funciona o frete?">Frete</button><button data-prompt="Quais cupons existem?">Cupons</button><button data-prompt="Ver coleção de verão">Coleções</button></div><form id="chatForm"><input id="chatInput" maxlength="500" placeholder="Pergunte sobre a loja..." autocomplete="off" aria-label="Sua pergunta"><button aria-label="Enviar mensagem">➤</button></form><label id="bmAiOption" class="bm-ai-option" hidden><input type="checkbox" id="bmAiEnabled"> Usar IA generativa local (opcional)</label><label class="bm-ai-option"><input type="checkbox" id="bmSaveChat"> Autorizar registro da pergunta e resposta local no MySQL (somente com login; não informe dados pessoais)</label><small class="chat-disclaimer">Consulta local ao catálogo • preços e pedidos demonstrativos</small></section>
+<div id="toast" class="toast" role="status"></div>
+</body></html>

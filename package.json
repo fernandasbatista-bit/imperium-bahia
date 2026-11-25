@@ -1,0 +1,15 @@
+{
+  "name": "imperium-bahia-bytemind",
+  "version": "1.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.cjs",
+    "test": "node tests/bytemind.test.cjs && node tests/catalogo.test.cjs && node tests/database.test.cjs"
+  },
+  "engines": {
+    "node": ">=20.12"
+  },
+  "dependencies": {
+    "mysql2": "^3.11.0"
+  }
+}

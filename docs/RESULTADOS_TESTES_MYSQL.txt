@@ -1,0 +1,9 @@
+
+> imperium-bahia-bytemind@1.1.0 test
+> node tests/bytemind.test.cjs && node tests/catalogo.test.cjs && node tests/database.test.cjs
+
+13 verificações passaram
+Catálogo real: 16 produtos validados; 16 listas de recomendações verificadas; 4 cenários adicionais aprovados.
+Banco: 13 verificações locais aprovadas (preços, validação, hash). MySQL real não testado.
+HTTP local em porta 18999: Home 200; status sem configuração 503; sessão anônima 200; pedido anônimo 401; acesso a .env 404.
+MySQL e instalação do mysql2: NÃO EXECUTADOS (servidor ausente e DNS do npm indisponível).

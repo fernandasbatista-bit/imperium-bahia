@@ -1,0 +1,8 @@
+Sintaxe: aprovada
+
+> imperium-bahia-bytemind@1.0.0 test
+> node tests/bytemind.test.cjs && node tests/catalogo.test.cjs
+
+13 verificações passaram
+Catálogo real: 16 produtos validados; 16 listas de recomendações verificadas; 4 cenários adicionais aprovados.
+HTTP local: página, script, status e endpoint desativado verificados.
